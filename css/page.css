@@ -1,0 +1,89 @@
+.bg-paper {
+  background-image: url("../images/paper-1.jpg"); }
+
+.bg-blue {
+  background-image: url("../images/wowwood.jpg"); }
+
+.main {
+  background-image: url("../images/vikings.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  overflow-x: visible;
+  padding-top: 1rem; }
+
+#guild-name {
+  font-family: 'Iceland', cursive;
+  text-align: center;
+  font-size: 7rem;
+  color: #2bb945; }
+
+#guild-location {
+  font-family: 'Iceland', cursive;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2bb945;
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+#guild-info {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+#guild-tabard {
+  padding-left: 7rem;
+  padding-top: 2rem; }
+
+#guild-desc {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 1.7rem; }
+  #guild-desc ul {
+    margin-left: 3rem; }
+  #guild-desc li {
+    margin-bottom: 0; }
+  #guild-desc p, #guild-desc ul {
+    margin-bottom: .75rem; }
+
+#members {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  height: 50rem;
+  font-family: 'Cinzel Decorative', cursive;
+  color: white; }
+
+#member-title {
+  text-align: center; }
+
+.member img {
+  max-height: 50%;
+  max-width: 50%; }
+
+.nav {
+  width: 50%;
+  float: right;
+  margin-right: 5rem; }
+  .nav > ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Iceland', cursive; }
+  .nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+    cursor: pointer; }
+    .nav a:hover {
+      background-color: #2bb945; }
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 12rem;
+    border-bottom: none;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    display: inline-block;
+    margin-right: -.5rem; } }
