@@ -10,7 +10,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+
+
 
 
 
@@ -25,10 +27,10 @@
     <div class="main">
       <div class="nav">
         <ul>
-          <li class="home"><a href="#">Home</a></li>
-          <li class="tutorials"><a class="active" href="#">Members</a></li>
-          <li class="about"><a href="#">Progression</a></li>
-          <li class="contact"><a href="#">Contact</a></li>
+          <li ><a href="#">Home</a></li>
+          <li ><a href="#members">Members</a></li>
+          <li ><a href="#">Progression</a></li>
+          <li ><a href="#">Contact</a></li>
         </ul>
       </div>
       <div class="u-cf"></div>
@@ -41,14 +43,15 @@
       </div>
     </div>
 
+    <div class="wall wood"></div>
     <div class="bg-paper">
       <div class="container">
         <div class="row">
           <div id="guild-info" class="row">
             <div id="guild-desc" class="six columns">
-              <h3> Who are we? </h3>
+              <h3> Who we are: </h3>
               <p>
-              We are a casual horde raiding guild. If you enojy:
+              Show Me My Opponent is a casual horde raiding guild. If you enojy:
               <ul>
                 <li>dysfunctional group dynamics</li>
                 <li>merciless abuse whenever you make a mistake</li>
@@ -67,21 +70,153 @@
       </div>
     </div>
 
-    <div class="bg-blue">
+    <div class="wall wood"></div>
+
+    <div class="bg-bank">
       <div class="container">
-        <div class="row">
-          <div id="members">
+        <div id="members">
+          <div class="row">
             <div id="member-title">
-              <h2> Current Raiding Team </h2>
+              <h2> Current Raiders </h2>
             </div>
-            <div class="member">
-              <img src="./images/bigd.png">
+            <div id="horde-logo">
+              <img src="./images/horde-red-shadow.png">
+            </div>
+          </div>
+        
+          <div id="member-types" class="row">
+            <div class="four columns">
+              <div class="member-type">
+                <img src="./images/tanks.png">
+                Tanks
+              </div>
+            </div>
+            <div class="four columns">
+              <div class="member-type">
+                <img src="./images/dps.png">
+                DPS
+              </div>
+            </div>
+            <div class="four columns">
+              <div class="member-type">
+                <img src="./images/healers.png">
+                Healers
+              </div>
+            </div>
+          </div>
+
+          <div id="member-badges">
+            <div class="row">
+              <div class="four columns">
+                <div class="member-badge pala">
+                  <div class="member-pic">
+                    <img src="./images/ohyeahz.png">
+                  </div>
+                  <span class="class-icon">
+                    <img src="./images/pala-logo.png">
+                  </span>
+                  <div class="member-name">
+                    <div class="name">Ooooyeahhzzz</div>
+                    <div class="member-spec"><span class="talent-spec">Protection</span><span class="class-type">Paladin</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="four columns">
+                <div class="member-badge hunt">
+                  <div class="member-pic">
+                    <img src="./images/beyo.png">
+                  </div>
+                  <span class="class-icon">
+                    <img src="./images/hunt-logo.png">
+                  </span>
+                  <div class="member-name">
+                    <div class="name">Beyonzo</div>
+                    <div class="member-spec"><span class="talent-spec">Marksmanship</span><span class="class-type">Hunter</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="four columns">
+                <div class="member-badge monk">
+                  <div class="member-pic">
+                    <img src="./images/misty.png">
+                  </div>
+                  <span class="class-icon">
+                    <img src="./images/monk-logo.png">
+                  </span>
+                  <div class="member-name">
+                    <div class="name">Mistybish</div>
+                    <div class="member-spec"><span class="talent-spec">Mistweaver</span><span class="class-type">Monk</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="four columns">
+                <div class="member-badge war">
+                  <div class="member-pic">
+                    <img src="./images/vael.png">
+                  </div>
+                  <span class="class-icon">
+                    <img src="./images/war-logo.png">
+                  </span>
+                  <div class="member-name">
+                    <div class="name">Vaelein</div>
+                    <div class="member-spec"><span class="talent-spec">Protection</span><span class="class-type">Warrior</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="four columns">
+                <div class="member-badge mage">
+                  <div class="member-pic">
+                    <img src="./images/mike.png">
+                  </div>
+                  <span class="class-icon">
+                    <img src="./images/mage-logo.png">
+                  </span>
+                  <div class="member-name">
+                    <div class="name">Mikestrahan</div>
+                    <div class="member-spec"><span class="talent-spec">Fire</span><span class="class-type">Mage</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="four columns">
+                <div class="member-badge druid">
+                  <div class="member-pic">
+                    <img src="./images/hellh.png">
+                  </div>
+                  <span class="class-icon">
+                    <img src="./images/druid-logo.png">
+                  </span>
+                  <div class="member-name">
+                    <div class="name">Hellhoof</div>
+                    <div class="member-spec"><span class="talent-spec">Restoration</span><span class="class-type">Druid</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="four columns">
+                &nbsp;
+              </div>
+              <div class="four columns">
+                <div class="member-badge sha">
+                  <div class="member-pic">
+                    <img src="./images/bigd.png">
+                  </div>
+                  <span class="class-icon">
+                    <img src="./images/sha-logo.png">
+                  </span>
+                  <div class="member-name">
+                    <div class="name">Bigdiesel</div>
+                    <div class="member-spec"><span class="talent-spec">Enhancement</span><span class="class-type">Shaman</span></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
 
   </body>
 </html>

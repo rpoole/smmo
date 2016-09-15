@@ -1,9 +1,36 @@
+$dh-color: #a330c9;
+$sha-color: #2359ff;
+$war-color: #c69b6d;
+$druid-color: #ff7c0a;
+$mage-color: #68ccef;
+$hunt-color: #aad372;
+$monk-color: #008467;
+$pala-color: #f48cba;
+
+$class-names:(dh, sha, war, druid, mage, hunt, monk, pala);
+$class-colors: ($dh-color, $sha-color, $war-color, $druid-color, $mage-color, $hunt-color, $monk-color, $pala-color);
+
 .bg-paper {
   background-image: url("../images/paper-1.jpg");
+  background-position: 10% 100%;
 }
 
-.bg-blue {
-  background-image: url("../images/wowwood.jpg");
+.bg-bank {
+  background-image: url("../images/bankbg.png");
+}
+
+.wall {
+  height: 2rem;
+  border-image-outset: 3px;
+
+  &.stone {
+    background-image: url("../images/stonewall.jpg");
+  }
+
+  &.wood {
+    background-image: url("../images/wowwoodplank.png");
+    background-size: contain;
+  }
 }
 
 .main {
@@ -18,7 +45,7 @@
 #guild-name {
   font-family: 'Iceland', cursive;
   text-align: center;
-  font-size: 7rem;
+  font-size: 7.5rem;
   color: #2bb945;
 }
 
@@ -45,6 +72,8 @@
 #guild-desc {
   font-family: 'Walter Turncoat', cursive;
   font-size: 1.7rem;
+  color: #821414;
+  text-shadow: 0 1px 1px rgba(0,0,0,.7);
 
   ul {
     margin-left: 3rem;
@@ -59,20 +88,120 @@
 
 #members {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 20rem;
   height: 50rem;
-  font-family: 'Cinzel Decorative', cursive;
-  color: white;
+  font-family: 'Bungee', cursive;
+  text-shadow: 0 2px 2px rgba(0,0,0,.7);
+
+  .member-type {
+    font-size: 3rem;
+    text-align: center;
+    color: #ddd;
+
+    img {
+      height: 5rem;
+      width: auto;
+      vertical-align: middle;
+    }
+  }
+}
+
+#member-types {
+  margin-top: 2rem;
 }
 
 #member-title {
   text-align: center;
+  color: rgb(100,0,0);
 }
 
-.member {
+#member-badges {
+  margin-top: 3rem;
+
+  @for $i from 1 through length($class-names) {
+    .#{nth($class-names, $i)} {
+      .class-type, .class-icon {
+        color: nth($class-colors, $i);
+      }
+
+      .class-icon {
+        background-color: nth($class-colors, $i);
+      }
+    }
+  }
+
+  .member-badge {
+    position: relative;
+    padding: .75rem;
+    height: 7rem;
+    background-image: url("../images/parchment.png");
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    padding-right: 2rem;
+    box-shadow: 0 1px 1px rgba(0,0,0,.7);
+
+    .member-pic {
+      display: inline;
+      float: left;
+      height: 70px;
+      width: 70px;
+      border-radius: 5px;
+      overflow: hidden;
+      border: 1px solid black;
+      margin-right: .8rem;
+      img {
+        vertical-align: middle;
+      }
+    }
+
+    .member-name {
+      display: inline-block;
+      vertical-align: top;
+      text-shadow: 0 1px 1px rgba(0,0,0,.7);
+
+      .name {
+        font-size: 1.2vw;
+        color: #fff;
+      }
+
+      .member-spec {
+        font-size: .7vw;
+
+        .talent-spec {
+          margin-right: .2vw;
+        }
+
+      }
+    }
+
+
+    .class-icon {
+      position: absolute;
+      left: 88%;
+      bottom: 45%;
+      padding-top: .9rem;
+      padding-left: .9rem;
+      padding-right: .9rem;
+      padding-bottom: .2rem;
+      border-radius: 50%;
+      box-shadow: 0 1px 1px rgba(0,0,0,.7);
+      border: 1px solid white;
+
+      img {
+        height: 4rem;
+        width: auto;
+      }
+
+    }
+  }
+}
+
+
+#horde-logo {
+  text-align: center;
   img {
-    max-height: 50%;
-    max-width: 50%;
+    width: auto;
+    height: 8rem;
   }
 }
 

@@ -1,8 +1,18 @@
 .bg-paper {
-  background-image: url("../images/paper-1.jpg"); }
+  background-image: url("../images/paper-1.jpg");
+  background-position: 10% 100%; }
 
-.bg-blue {
-  background-image: url("../images/wowwood.jpg"); }
+.bg-bank {
+  background-image: url("../images/bankbg.png"); }
+
+.wall {
+  height: 2rem;
+  border-image-outset: 3px; }
+  .wall.stone {
+    background-image: url("../images/stonewall.jpg"); }
+  .wall.wood {
+    background-image: url("../images/wowwoodplank.png");
+    background-size: contain; }
 
 .main {
   background-image: url("../images/vikings.jpg");
@@ -15,7 +25,7 @@
 #guild-name {
   font-family: 'Iceland', cursive;
   text-align: center;
-  font-size: 7rem;
+  font-size: 7.5rem;
   color: #2bb945; }
 
 #guild-location {
@@ -37,7 +47,9 @@
 
 #guild-desc {
   font-family: 'Walter Turncoat', cursive;
-  font-size: 1.7rem; }
+  font-size: 1.7rem;
+  color: #821414;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7); }
   #guild-desc ul {
     margin-left: 3rem; }
   #guild-desc li {
@@ -47,17 +59,111 @@
 
 #members {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 20rem;
   height: 50rem;
-  font-family: 'Cinzel Decorative', cursive;
-  color: white; }
+  font-family: 'Bungee', cursive;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7); }
+  #members .member-type {
+    font-size: 3rem;
+    text-align: center;
+    color: #ddd; }
+    #members .member-type img {
+      height: 5rem;
+      width: auto;
+      vertical-align: middle; }
+
+#member-types {
+  margin-top: 2rem; }
 
 #member-title {
-  text-align: center; }
+  text-align: center;
+  color: #640000; }
 
-.member img {
-  max-height: 50%;
-  max-width: 50%; }
+#member-badges {
+  margin-top: 3rem; }
+  #member-badges .dh .class-type, #member-badges .dh .class-icon {
+    color: #a330c9; }
+  #member-badges .dh .class-icon {
+    background-color: #a330c9; }
+  #member-badges .sha .class-type, #member-badges .sha .class-icon {
+    color: #2359ff; }
+  #member-badges .sha .class-icon {
+    background-color: #2359ff; }
+  #member-badges .war .class-type, #member-badges .war .class-icon {
+    color: #c69b6d; }
+  #member-badges .war .class-icon {
+    background-color: #c69b6d; }
+  #member-badges .druid .class-type, #member-badges .druid .class-icon {
+    color: #ff7c0a; }
+  #member-badges .druid .class-icon {
+    background-color: #ff7c0a; }
+  #member-badges .mage .class-type, #member-badges .mage .class-icon {
+    color: #68ccef; }
+  #member-badges .mage .class-icon {
+    background-color: #68ccef; }
+  #member-badges .hunt .class-type, #member-badges .hunt .class-icon {
+    color: #aad372; }
+  #member-badges .hunt .class-icon {
+    background-color: #aad372; }
+  #member-badges .monk .class-type, #member-badges .monk .class-icon {
+    color: #008467; }
+  #member-badges .monk .class-icon {
+    background-color: #008467; }
+  #member-badges .pala .class-type, #member-badges .pala .class-icon {
+    color: #f48cba; }
+  #member-badges .pala .class-icon {
+    background-color: #f48cba; }
+  #member-badges .member-badge {
+    position: relative;
+    padding: .75rem;
+    height: 7rem;
+    background-image: url("../images/parchment.png");
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    padding-right: 2rem;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.7); }
+    #member-badges .member-badge .member-pic {
+      display: inline;
+      float: left;
+      height: 70px;
+      width: 70px;
+      border-radius: 5px;
+      overflow: hidden;
+      border: 1px solid black;
+      margin-right: .8rem; }
+      #member-badges .member-badge .member-pic img {
+        vertical-align: middle; }
+    #member-badges .member-badge .member-name {
+      display: inline-block;
+      vertical-align: top;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7); }
+      #member-badges .member-badge .member-name .name {
+        font-size: 1.2vw;
+        color: #fff; }
+      #member-badges .member-badge .member-name .member-spec {
+        font-size: .7vw; }
+        #member-badges .member-badge .member-name .member-spec .talent-spec {
+          margin-right: .2vw; }
+    #member-badges .member-badge .class-icon {
+      position: absolute;
+      left: 88%;
+      bottom: 45%;
+      padding-top: .9rem;
+      padding-left: .9rem;
+      padding-right: .9rem;
+      padding-bottom: .2rem;
+      border-radius: 50%;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+      border: 1px solid white; }
+      #member-badges .member-badge .class-icon img {
+        height: 4rem;
+        width: auto; }
+
+#horde-logo {
+  text-align: center; }
+  #horde-logo img {
+    width: auto;
+    height: 8rem; }
 
 .nav {
   width: 50%;
